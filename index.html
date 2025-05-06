@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kopi Kecintaan</title>
+<style>
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+  }
+  header {
+    background-color: #d8227d;
+    color: #fff;
+    padding: 15px 0;
+  }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 20px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+  }
+  .btn-primary {
+    background-color: #d1508c;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn-primary:hover {
+    background-color: #d1508c;
+  }
+  section {
+    margin-top: 60px;
+  }
+  section h3 {
+    font-size: 1.6rem;
+    color: #fd81c5;
+    margin-bottom: 20px;
+  }
+  .about p {
+    font-size: 1.05rem;
+    max-width: 700px;
+    margin-bottom: 10px;
+  }
+  .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    flex: 1;
+    min-width: 250px;
+  }
+  .service-item h4 {
+    margin-bottom: 10px;
+    color: #f158c3;
+  }
+  .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    padding: 20px;
+    max-width: 200px;
+    text-align: center;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .team-member h4 {
+    margin-bottom: 6px;
+    color: #e95c92;
+  }
+  form {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  form button {
+    background-color: #e01083;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  form button:hover {
+    background-color: #f542b0;
+  }
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+    }
+    .team {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Kopi Kecintaan</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Menu</a></li>
+          <li><a href="#services">About</a></li>
+          <li><a href="#team">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Bagian utama">
+      <h2>Solusi Untuk Memperbaiki Mood Anda</h2>
+      <p>kopi memang menjadi solusi terbaik untuk mengembalikan mood, kami menyediakan banyak varian kopi yang cocok untuk anda.</p>
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hubungi Kami</button>
+    </section>
+
+    <section id="about" class="about" aria-label="Tentang perusahaan">
+      <h3>Tentang Kami</h3>
+      <p>Perusahaan ini awalnya berdiri karena hanya untuk mengisi waktu luang saya, tetapi perusahaan ini semakin berkembang sampai mempunyai beberapa cabang.</p>
+    </section>
+
+    <section id="services" class="services" aria-label="Layanan perusahaan">
+      <h3>Layanan Kami</h3>
+      <div class="service-item" tabindex="0">
+        <h4>Konsultasi Bisnis</h4>
+        <p>Membantu memperbaiki dan menyemangati anda dalam situasi apapun, misalnya pusing karena tugas coding, skripsi dan lain-lain.</p>
+      </div>
+      <div class="service-item" tabindex="0">
+        <h4>Pengembangan Produk</h4>
+        <p>Mempunyai berbagai menu kopi yg pastinya banyak di gemari oleh semua orang.</p>
+      </div>
+      <div class="service-item" tabindex="0">
+        <h4>Dukungan Pelanggan</h4>
+        <p>Memberikan layanan dukungan cepat dan responsif untuk semua pelanggan kami.</p>
+      </div>
+    </section>
+
+    <section id="menu" class="menu" aria-label="Contoh Menu">
+      <h3>Contoh Menu</h3>
+      <div class="team-member" tabindex="0">
+        <img src="https://i.pinimg.com/736x/f1/c6/89/f1c68907fc855fdd9a031347774dcc8a.jpg" alt="kopasus (kopi susu)" />
+        <h4>kopasus(kopi susu)</h4>
+        <p></p>
+      </div>
+      <div class="team-member" tabindex="0">
+        <img src="https://i.pinimg.com/736x/94/4d/3f/944d3f018069348a8b85168b3339fdd3.jpg" alt="Kopi smile" />
+        <h4>kopi smile</h4>
+        <p></p>
+      </div>
+      <div class="team-member" tabindex="0">
+        <img src="https://i.pinimg.com/736x/00/37/60/0037602b18f3d14ab14c5a3d2bf9fccd.jpg" alt="Dalgona kopi" />
+        <h4>Dalgona kopi</h4>
+        <p></p>
+      </div>
+    </section>
+
+    <section id="contact" aria-label="Kontak perusahaan">
+      <h3>Hubungi Kami</h3>
+      <form onsubmit="event.preventDefault(); alert('Terima kasih telah menghubungi kami! Kami akan segera menghubungi Anda kembali.'); this.reset();">
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Alamat email Anda" required />
+
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>by keisha aurellia.</p>
+  </footer>
+</body>
+</html>
